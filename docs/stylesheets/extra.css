@@ -1,0 +1,4 @@
+/* tablesort - prevents "required" th from breaking to two lines */
+.md-typeset table:not([class]) th {
+  min-width: 5.5rem;
+}

@@ -1,0 +1,50 @@
+site_name: GA4 Data Layer Docs
+site_url: https://docs.ctysse.net
+repo_name: GA4 Data Layer Docs
+repo_url: https://github.com/tyssejc/ga4-data-layer-docs
+edit_uri: edit/main/
+theme:
+  name: material
+  palette: 
+    scheme: default  
+    primary: blue
+    accent: light blue
+  logo: assets/logo.png
+  features:
+    - content.action.edit
+    - content.code.annotate
+    - navigation.indexes
+    - navigation.sections
+    - navigation.tabs
+    - toc.integrate
+plugins:
+  - git-revision-date-localized:
+      fallback_to_build_date: true
+  - search
+  - tags:
+      tags_file: tags.md
+markdown_extensions:
+  - admonition
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: false
+      auto_title: true
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+not_in_nav: |
+  /tags.md
+extra_css:
+  - stylesheets/extra.css
+extra_javascript:
+  - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
+  - javascripts/tablesort.js
