@@ -1,7 +1,7 @@
 site_name: GA4 Data Layer Docs
-site_url: https://docs.ctysse.net
+site_url: https://tyssejc.github.io/dldocs/
 repo_name: GA4 Data Layer Docs
-repo_url: https://github.com/tyssejc/ga4-data-layer-docs
+repo_url: https://github.com/tyssejc/dldocs
 edit_uri: edit/main/
 theme:
   name: material
