@@ -1,0 +1,8 @@
+# mkdocs build artifact
+site/
+
+# Python
+.python-version
+
+# Other
+.DS_Store
